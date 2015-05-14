@@ -19,6 +19,7 @@ class RenameFiles(Tkinter.Frame):
     #(2) for each file, rename filename
         for file_name in file_list:
             os.rename(file_name, ''.join(i for i in file_name if not i.isdigit()))
+        os.system('explorer ' + saved_path)
         os.chdir(saved_path)
     
 
