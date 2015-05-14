@@ -18,7 +18,7 @@ class RenameFiles(Tkinter.Frame):
         os.chdir(dirname)
     #(2) for each file, rename filename
         for file_name in file_list:
-            os.rename(file_name, file_name.translate(None, "0123456789"))
+            os.rename(file_name, ''.join(i for i in file_name if not i.isdigit()))
         os.chdir(saved_path)
     
 
