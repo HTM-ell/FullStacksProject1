@@ -12,7 +12,12 @@ sweeney_Todd = media.Movie("Sweeney Todd: The Demon Barber of Fleet Street",
 						   
 pacific_Rim = media.Movie("Pacific Rim",
 						  "www.youtube.com/watch?v=5guMumPFBag")
-						  
-movies = [toy_story, avatar, sweeney_Todd, pacific_Rim]
+
+lion_king = media.Movie("The Lion King", "www.youtube.com/watch?v=4sj1MT05lAA")
+
+
+fifth_element = media.Movie("The Fifth Element","www.youtube.com/watch?v=VkX7dHjL-aY")
+
+movies = [toy_story, avatar, sweeney_Todd, pacific_Rim, lion_king, fifth_element]
 
 omp(movies)
