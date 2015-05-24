@@ -1,11 +1,12 @@
 import webbrowser
-import refine
+import refine #imports module I created to interact with imdb
 
 class Movie():
-        # about this module     http://imdbpy.sourceforge.net/docs/README.package.txt
         
-        
+        #This has been refactored fromt the original code to only need two arguments
+        #To be supplied to the init
         def __init__(self, movie_title, trailer_youtube):
+                #Creates an instance of the refine.IMDbInfo Class
                 movie = refine.IMDbInfo(movie_title)
                 self.title = movie.title()
                 self.storyline = movie.plot()
