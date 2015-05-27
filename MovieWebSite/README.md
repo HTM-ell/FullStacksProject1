@@ -10,3 +10,17 @@ Installation
 
 Please install IMDbPy to allow this code to run properly 
 site: http://imdbpy.sourceforge.net/downloads.html
+
+Instructions
+To add a new movie trailer to the library follow these steps:
+1.Open entertain_center.py in IDLE 
+2.Creative an instance of a movie object by defining a variable as media.Movie() and passing in the Title of the movie and a youtube url of the trailer. 
+3. Add the created variable to the the movie array 
+4. Run entertain_center.py
+Example:
+
+big_Hero_6 = media.Movie("Big Hero 6", **some youtube URL**)
+
+movies = [..., ...., ...., ..., ..., big_Hero_6]
+
+Run
